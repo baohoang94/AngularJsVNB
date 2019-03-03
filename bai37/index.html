@@ -1,0 +1,46 @@
+<html lang="en" ng-app="myApp">
+
+<head>
+    <title>37. Tìm hiểu AngularJS</title>
+    <meta charset="utf-8">
+
+    <!-- load bootstrap and jquery via CDN -->
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
+
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <style>
+        * {
+            font-size: 1.05em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">
+                    Main
+                    </a>
+                    <a class="navbar-brand" href="#/second">
+                    second
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div ng-view></div>
+                
+    </div>
+
+</body>
+
+</html>
